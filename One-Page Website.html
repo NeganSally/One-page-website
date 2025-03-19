@@ -1,56 +1,32 @@
 <!DOCTYPE html>
 <html>
-
-	<title>Mazda.com</title>
+	<head>
+		<link rel="One-page_website.html" href="one_page_website.css">
+		<title>Mazda.com</title>
+	</head>
 		
-	<body bgcolor="lightpink">
-
-	<body>
+	<body bg-color="lightpink">
 	  
 <!-- Nav -->
-		<nav>
-					<style> 
-					.gfg { 
-						font-size: 40px; 
-						color: #090; 
-						font-weight: bold; 
-						text-align: center; 
-					} 
-			  
-					.nav_tag { 
-						text-align: center; 
-						margin: 30px 0; 
-						font-size: 35px; 
-					} 
-					</style>
-		
-		    <p align="center">
-				<a href="#Home Section">Home</a> | 
-				<a href="#FAQ Section">Go to About</a> |
-				<a href="#Pictures and videos">Go to Video</a> | 
-				<a href="#Submit Form">Go to Submit Form</a>
-		</nav>
+	<nav>
+		<p-align="center">
+			<a href="#Home Section">Home</a> | 
+			<a href="#FAQ Section">Go to About</a> |
+			<a href="#Pictures and videos">Go to Video</a> | 
+			<a href="#Submit Form">Go to Submit Form</a>
+	</nav>
 <!-- End Nav -->
 		
-		<!-- Home -->
- 	
+		<!-- Home -->	
 					<h3> Miata bois </h3>
-
 		<!-- End Home -->
 		
 <!-- pic/vid -->
-		<article
-		style="
-			width:950px;
-			border: 2px solid red;
-			padding: 100px;
-			border-radius: 10px;
-			margin: 5px;
-		">
+	<article>
 
 				<img src="https://th.bing.com/th/id/R.249400b39f1a454e8510ab0421f1580a?rik=KZi1skl8%2b5lGvA&riu=http%3a%2f%2fs.pikabu.ru%2fimages%2fbig_size_comm%2f2012-12_4%2f13559182685858.png&ehk=XnZpto8DZLETT4G0kkf4KRIFQ85mfSUxkpzIRFLq32o%3d&risl=&pid=ImgRaw&r=0"
 			
-			text align="center"
+			text-align="justify"
 			alt=" "
 			width="600"
 			height="500"
@@ -67,19 +43,88 @@
 			src= "https://youtu.be/dv-llQ_P4iY?si=BesWRsl0orkIDXCT" 
 				frameborder="0"
 				allowfullscreen>
-		</iframe
+		</iframe>
 			
-		</article
+	</article>
 		
-<!-- End Picture/vid -->
+<!-- End Picture -->
 		
+<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="air.gif" alt="air gif" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="water.gif" alt="water gif" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="fire.gif" alt="fire gif" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="earth.gif" alt="earth gif" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="air.gif" alt="air gif" onclick="currentSlide(1)" alt="Nature">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="water.gif" alt="water gif" onclick="currentSlide(2)" alt="Snow">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="fire.gif" alt="fire gif" onclick="currentSlide(3)" alt="Mountains">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="earth.gif" alt="earth gif" onclick="currentSlide(4)" alt="Lights">
+	  </div>
+	</div>
+  </div>
+<!-- IMAGES -->
 		
 <!-- Form Sec -->
 	<p>
 		<em>Please put in your personal info (I will steal your data!)</em>
 	<h1 id="Submit Form">Form</h1>
 	<form>
-		<form action="" method="get"
+		<form action="" method="get">
 			First Name: <input type="text" name="First_Name"><br>
 			Last Name: <input type="text" name="Last_Name"><br>
 			Email:  <input type="text" name="Email"><br>
@@ -90,34 +135,6 @@
 
 	<!-- Footer -->
 		
-		<style>
-			 footer {
-				display: flex;
-				align: justify;
-				background-color: purple;
-				color: white;
-				padding: 20px;
-			}
-
-			.column {
-				width: 27%;
-			}
-
-			p {
-				font-size: 20px;
-				font-weight: bold;
-				margin-bottom: 10px;
-			}
-
-			ul {
-				list-style-type: none;
-				padding: 0;
-			}
-
-			li {
-				margin-bottom: 5px;
-			}
-		</style>
 		
 		<footer>
 				<div class="column">
