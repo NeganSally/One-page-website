@@ -1,0 +1,15 @@
+h1 {
+    color: rgb(255, 228, 140);
+    text-shadow: 2px 2px 5px black;
+    font-family: 'Papyrus', 'Fantasy', cursive;
+}
+
+body {
+    background-color: rgb(225, 91, 255);
+}
+
+#vid {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+  }
